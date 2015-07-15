@@ -5,3 +5,5 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+soviets = Soviet.create([{name: 'Anatoly Anatolivich', rank: 'Private', position: 'Infantry', experience: 2, about: 'I vill crush you!'}])
