@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @soviet.name %>
+</p>
+
+<p>
+  <strong>Rank:</strong>
+  <%= @soviet.rank %>
+</p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @soviet.position %>
+</p>
+
+<p>
+  <strong>Experience:</strong>
+  <%= @soviet.experience %>
+</p>
+
+<p>
+  <strong>About:</strong>
+  <%= @soviet.about %>
+</p>
+
+<%= link_to 'Edit', edit_soviet_path(@soviet) %> |
+<%= link_to 'Back', soviets_path %>

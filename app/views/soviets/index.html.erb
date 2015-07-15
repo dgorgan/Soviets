@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Soviets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Rank</th>
+      <th>Position</th>
+      <th>Experience</th>
+      <th>About</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @soviets.each do |soviet| %>
+      <tr>
+        <td><%= soviet.name %></td>
+        <td><%= soviet.rank %></td>
+        <td><%= soviet.position %></td>
+        <td><%= soviet.experience %></td>
+        <td><%= soviet.about %></td>
+        <td><%= link_to 'Show', soviet %></td>
+        <td><%= link_to 'Edit', edit_soviet_path(soviet) %></td>
+        <td><%= link_to 'Destroy', soviet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Soviet', new_soviet_path %>
